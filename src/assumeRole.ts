@@ -102,7 +102,7 @@ export async function assumeRole(params: assumeRoleParams) {
   // Load role session tags
   const tagArray: Tag[] = [
     { Key: 'GitHub', Value: 'Actions' },
-    { Key: 'Repository', Value: GITHUB_REPOSITORY },
+    { Key: 'Repository', Value: 'hpe-sre/demo-shane' },
     { Key: 'Workflow', Value: sanitizeGitHubVariables(GITHUB_WORKFLOW) },
     { Key: 'Action', Value: GITHUB_ACTION },
     { Key: 'Actor', Value: sanitizeGitHubVariables(GITHUB_ACTOR) },
